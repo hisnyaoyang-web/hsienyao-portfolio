@@ -1,0 +1,26 @@
+# Tool configs
+.agents/
+.claude/
+.codebuddy/
+.trae/
+
+# Skill symlinks (not site content)
+skills/
+
+# Separate project
+paper-craft-skills/
+
+# Utility scripts
+*.py
+
+# Source portfolio files (extracted PNGs in portfolio/ are used by the site)
+作品集文件/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/

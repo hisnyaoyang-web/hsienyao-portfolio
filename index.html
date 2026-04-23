@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hsienyao Yang (Angela) · Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="ink-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-en">Angela</span>
+                <span class="logo-zh">仙瑶</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">AI Projects</a></li>
+                <li><a href="#content" data-i18n="nav.content">Content</a></li>
+                <li><a href="#events" data-i18n="nav.events">Events</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#research" data-i18n="nav.research">Research</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switch" id="langSwitch" aria-label="Switch Language">
+                    <span class="lang-current">EN</span>
+                    <span class="lang-sep">/</span>
+                    <span class="lang-alt">中文</span>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-portrait">
+                <div class="portrait-wrap">
+                    <img src="photo.jpg" alt="Hsienyao Yang">
+                </div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting" data-i18n="hero.greeting">Welcome</p>
+                <h1 class="hero-name">
+                    <span class="name-en">Hsienyao Yang</span>
+                    <span class="name-divider">|</span>
+                    <span class="name-cn">Angela</span>
+                </h1>
+                <p class="hero-name-zh">杨仙瑶</p>
+                <div class="hero-line"></div>
+                <p class="hero-title" data-i18n="hero.title">文学底蕴 · AI 驱动 · 全栈实践</p>
+                <p class="hero-school" data-i18n="hero.school">武汉大学 汉语言文学（文化数字化微专业）</p>
+                <p class="hero-quote" data-i18n="hero.quote">"以文字为骨骼，以 AI 为羽翼，在数字维度重塑文化表达。"</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_projects">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta_contact">Contact Me</a>
+                </div>
+                <div class="hero-meta">
+                    <span class="meta-item" data-i18n="hero.meta1">Wuhan University</span>
+                    <span class="meta-dot">◆</span>
+                    <span class="meta-item">GPA 3.8/4.0</span>
+                    <span class="meta-dot">◆</span>
+                    <span class="meta-item" data-i18n="hero.meta2">Class of 2028</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span class="scroll-line"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="section-header">
+                <span class="section-number">壹</span>
+                <h2 class="section-title" data-i18n="about.title">About & Education</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">关于我</p>
+            </div>
+            <div class="about-body">
+                <div class="about-card">
+                    <h3 class="about-card-title" data-i18n="about.edu.title">🎓 Education</h3>
+                    <div class="edu-main">
+                        <p data-i18n="about.edu.school">武汉大学 | 汉语言文学 (本科)</p>
+                        <p class="edu-time" data-i18n="about.edu.time">2024.09 – Present</p>
+                        <p class="edu-gpa">GPA 3.8 / 4.0</p>
+                    </div>
+                    <div class="edu-minor" data-i18n="about.edu.minor">辅修：文化数字化微专业</div>
+                </div>
+
+                <div class="about-card">
+                    <h3 class="about-card-title" data-i18n="about.honors.title">🏅 Honors & Awards</h3>
+                    <ul class="honor-list">
+                        <li data-i18n="about.honors.h1">武汉大学文学院年度优秀学生乙等奖学金</li>
+                        <li data-i18n="about.honors.h2">校级三好学生、社会实践先进个人</li>
+                        <li data-i18n="about.honors.h3">全国大学生数字贸易大赛 <strong>全国一等奖</strong></li>
+                        <li data-i18n="about.honors.h4">中国大学生计算机设计大赛 <strong>中南赛区一等奖</strong></li>
+                    </ul>
+                </div>
+
+                <div class="about-card full-width">
+                    <h3 class="about-card-title" data-i18n="about.strengths.title">💡 Core Competencies</h3>
+                    <div class="capability-cards">
+                        <div class="capability-card">
+                            <h4 data-i18n="about.capability.c1.title">Product Thinking</h4>
+                            <p class="capability-summary" data-i18n="about.capability.c1.summary">Complete ability from user research to product delivery.</p>
+                            <div class="capability-tags">
+                                <span data-i18n="about.capability.c1.t1">User Research</span>
+                                <span data-i18n="about.capability.c1.t2">Data Analysis</span>
+                                <span data-i18n="about.capability.c1.t3">Requirement Breakdown</span>
+                                <span data-i18n="about.capability.c1.t4">Product Design</span>
+                                <span data-i18n="about.capability.c1.t5">Iterative Optimization</span>
+                            </div>
+                            <div class="capability-projects">
+                                <span class="capability-projects-label" data-i18n="about.capability.projects">Projects:</span>
+                                <span data-i18n="about.capability.c1.projects">Cyber Ancestor Cultivation, Children's Education Platform</span>
+                            </div>
+                        </div>
+                        <div class="capability-card">
+                            <h4 data-i18n="about.capability.c2.title">AI & Development</h4>
+                            <p class="capability-summary" data-i18n="about.capability.c2.summary">Independent AI product demo and web development.</p>
+                            <div class="capability-tags">
+                                <span data-i18n="about.capability.c2.t1">Web Development</span>
+                                <span data-i18n="about.capability.c2.t2">LLM API Integration</span>
+                                <span data-i18n="about.capability.c2.t3">AIGC Tools</span>
+                                <span data-i18n="about.capability.c2.t4">Data Processing</span>
+                                <span data-i18n="about.capability.c2.t5">Rapid Prototyping</span>
+                            </div>
+                            <div class="capability-projects">
+                                <span class="capability-projects-label" data-i18n="about.capability.projects">Projects:</span>
+                                <span data-i18n="about.capability.c2.projects">Su Shi Sentiment Analysis, Children's Education Platform</span>
+                            </div>
+                        </div>
+                        <div class="capability-card">
+                            <h4 data-i18n="about.capability.c3.title">Content & Growth</h4>
+                            <p class="capability-summary" data-i18n="about.capability.c3.summary">Content strategy and growth operations.</p>
+                            <div class="capability-tags">
+                                <span data-i18n="about.capability.c3.t1">Content Strategy</span>
+                                <span data-i18n="about.capability.c3.t2">Platform Operations</span>
+                                <span data-i18n="about.capability.c3.t3">Cold-Start Growth</span>
+                                <span data-i18n="about.capability.c3.t4">Data-Driven Optimization</span>
+                                <span data-i18n="about.capability.c3.t5">Multi-Platform Distribution</span>
+                            </div>
+                            <div class="capability-projects">
+                                <span class="capability-projects-label" data-i18n="about.capability.projects">Projects:</span>
+                                <span data-i18n="about.capability.c3.projects">WHU Douyin Club, Personal Account Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="projects">
+            <div class="section-header">
+                <span class="section-number">贰</span>
+                <h2 class="section-title" data-i18n="projects.title">AI & Product Labs</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">AI 项目与产品实验</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-icon">古</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag" data-i18n="projects.p1.tag">AI Product</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3 data-i18n="projects.p1.title">Cyber Ancestor Cultivation</h3>
+                        <p data-i18n="projects.p1.role">项目负责人</p>
+                        <p data-i18n="projects.p1.desc">AI 互动养成类产品，从 0→1 设计文化角色成长系统，探索传统文化的游戏化表达。</p>
+                        <div class="project-highlight" data-i18n="projects.p1.highlight">🏆 获抖音 AI 创变者计划 2026 华中区直通资格</div>
+                        <a href="https://my.feishu.cn/wiki/EP7wwjozvi5l6nk56y1cgCbcntd?from=from_copylink" target="_blank" rel="noopener" class="project-link">
+                            <span data-i18n="projects.p1.link">查看项目文档 →</span>
+                        </a>
+                        <div class="project-tags">
+                            <span>AI Product</span>
+                            <span>Game Design</span>
+                            <span>Cultural IP</span>
+                        </div>
+                    </div>
+                    <div class="project-media">
+                        <video controls preload="metadata" poster="cyber-ancestor-poster.jpg">
+                            <source src="cyber-ancestor-demo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </article>
+
+                <article class="project-card" data-images="portfolio/images/sushi-sentiment.png">
+                    <div class="project-image">
+                        <div class="project-icon">文</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag" data-i18n="projects.p2.tag">NLP</span>
+                            <span class="project-date">2025.11 – 2026.01</span>
+                        </div>
+                        <h3 data-i18n="projects.p2.title">Sentiment Analysis for Su Shi & Su Zhe</h3>
+                        <p data-i18n="projects.p2.role">独立全栈开发者</p>
+                        <p data-i18n="projects.p2.desc">利用大模型技术对经典文学进行情感标注，实现文化遗产的数字化交互。</p>
+                        <div class="project-tags">
+                            <span>LLM API</span>
+                            <span>Data Annotation</span>
+                            <span>Web App</span>
+                        </div>
+                    </div>
+                    <div class="project-media">
+                        <video controls preload="metadata" poster="sushi-sentiment-poster.jpg">
+                            <source src="二苏诗词情感识别工具网站.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </article>
+
+                <article class="project-card" data-images="portfolio/images/children-edu.png">
+                    <div class="project-image">
+                        <div class="project-icon">教</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag" data-i18n="projects.p3.tag">Full-Stack</span>
+                            <span class="project-date">2026.04</span>
+                        </div>
+                        <h3 data-i18n="projects.p3.title">Children's Education Platform</h3>
+                        <p data-i18n="projects.p3.role">独立开发者</p>
+                        <p data-i18n="projects.p3.desc">完成从需求分析到部署上线的全流程，输出具备实用价值的落地 Demo。</p>
+                        <a href="https://haoguxuetang-9g5rox8f0bfb41f4-1368780224.tcloudbaseapp.com/haoguxuetangdaka/index.html" target="_blank" rel="noopener" class="project-link">
+                            <span data-i18n="projects.p3.link">访问网站 →</span>
+                        </a>
+                        <div class="project-tags">
+                            <span>Frontend</span>
+                            <span>Backend</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="project-media">
+                        <video controls preload="metadata" poster="children-edu-poster.jpg">
+                            <source src="儿童公益教学工具网站.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="content">
+            <div class="section-header">
+                <span class="section-number">叁</span>
+                <h2 class="section-title" data-i18n="content.title">Content Strategy</h2>
+                <p class="section-subtitle" data-i18n="content.subtitle">内容运营与品牌传播</p>
+            </div>
+            <div class="content-cards">
+                <div class="content-card" data-images="portfolio/images/wuhan-douyin-club.png">
+                    <div class="content-icon">抖</div>
+                    <h3 data-i18n="content.c1.title">武大抖音俱乐部</h3>
+                    <p class="content-role" data-i18n="content.c1.role">主编及主要负责人</p>
+                    <p data-i18n="content.c1.desc">负责内容策略与选题规划。账号累计播放 800万+，单月互动率提升 30%。</p>
+                </div>
+                <div class="content-card" data-images="portfolio/images/personal-xiaohongshu.png,portfolio/images/personal-video-channel.png">
+                    <div class="content-icon">红</div>
+                    <h3 data-i18n="content.c2.title">个人账号独立运营</h3>
+                    <p class="content-role" data-i18n="content.c2.role">小红书 / 视频号</p>
+                    <p data-i18n="content.c2.desc">实现账号冷启动，单条视频播放达 6W+，小红书粉丝月增长 500+。</p>
+                </div>
+                <div class="content-card" data-images="portfolio/images/mainstream-media.png">
+                    <div class="content-icon">媒</div>
+                    <h3 data-i18n="content.c3.title">主流媒体内容创作</h3>
+                    <p class="content-role" data-i18n="content.c3.role">独立创作者</p>
+                    <p data-i18n="content.c3.desc">作品发表于《中国青年报》、《长江日报》，累计阅读量超 10W+。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="events">
+            <div class="section-header">
+                <span class="section-number">肆</span>
+                <h2 class="section-title" data-i18n="events.title">Event Planning</h2>
+                <p class="section-subtitle" data-i18n="events.subtitle">活动策划与执行</p>
+            </div>
+            <div class="content-cards event-cards">
+                <div class="content-card" data-images="portfolio/images/huodongcehua-1.png,portfolio/images/huodongcehua-2.png">
+                    <div class="content-icon">策</div>
+                    <h3 data-i18n="events.e1.title">WHU Douyin Club · Editor-in-Chief</h3>
+                    <p class="content-role" data-i18n="events.e1.role">活动策划与主编</p>
+                    <p data-i18n="events.e1.desc">策划并执行多场校园主题活动，包括"寻迹武大·抖见新章"校园文化探索、"珞珈越野·驰骋自然"户外越野、音乐会摊位等。负责从方案设计、物料对接到志愿者招募与分工的全流程。</p>
+                    <div class="event-stats">
+                        <div class="event-stat">
+                            <span class="stat-number" data-i18n="events.e1.s1">2W+</span>
+                            <span class="stat-label" data-i18n="events.e1.s1.label">线上直播观看</span>
+                        </div>
+                        <div class="event-stat">
+                            <span class="stat-number" data-i18n="events.e1.s2">1W+</span>
+                            <span class="stat-label" data-i18n="events.e1.s2.label">线下参与人次</span>
+                        </div>
+                        <div class="event-stat">
+                            <span class="stat-number" data-i18n="events.e1.s3">160+</span>
+                            <span class="stat-label" data-i18n="events.e1.s3.label">互动抽奖参与</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card" data-images="portfolio/images/huodongcehua-3.png">
+                    <div class="content-icon">摄</div>
+                    <h3 data-i18n="events.e2.title">WHU Student Affairs · Photography & Video Lead</h3>
+                    <p class="content-role" data-i18n="events.e2.role">摄影视讯部负责人</p>
+                    <p data-i18n="events.e2.desc">负责"2024年度十大珞珈风云学子评选活动"及"我在武大听讲座"系列活动的现场摄影调度与新闻宣发，获武汉大学党委学生工作部工作表彰。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="research">
+            <div class="section-header">
+                <span class="section-number">伍</span>
+                <h2 class="section-title" data-i18n="research.title">Research</h2>
+                <p class="section-subtitle" data-i18n="research.subtitle">科研实践</p>
+            </div>
+            <div class="content-cards research-single">
+                <div class="content-card" data-images="portfolio/images/keyan.png">
+                    <div class="content-icon">研</div>
+                    <h3 data-i18n="research.r1.title">AI-Powered Cultural Gene Digitization</h3>
+                    <p class="content-role" data-i18n="research.r1.role">项目负责人 · 核心算法与内容逻辑构建</p>
+                    <p data-i18n="research.r1.desc">基于文物图像的传统文化基因提取与智能标注研究。运用 Meta SAM 3、Qwen 3-VL、Gemini 1.5 Pro 等 AI 工具，实现图像分割、语义标注、跨模态融合到文物聚类展示的全流程。</p>
+                    <div class="project-tags" style="justify-content: center; margin-top: 16px;">
+                        <span>Meta SAM 3</span>
+                        <span>Qwen 3-VL</span>
+                        <span>Gemini 1.5 Pro</span>
+                        <span>Cross-Modal Fusion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="experience">
+            <div class="section-header">
+                <span class="section-number">陆</span>
+                <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+                <p class="section-subtitle" data-i18n="experience.subtitle">实习与社会实践</p>
+            </div>
+            <div class="experience-groups">
+                <div class="experience-group">
+                    <h3 class="group-title" data-i18n="exp.group_intern">实习经历</h3>
+                    <div class="group-items">
+                        <div class="exp-card">
+                            <div class="exp-date">2025.12 – Present</div>
+                            <h3 data-i18n="exp.e2.company">Wuhan University Intelligent Computing Laboratory for Cultural Heritage</h3>
+                            <p class="exp-role" data-i18n="exp.e2.role">Assistant</p>
+                            <p class="exp-desc" data-i18n="exp.e2.desc">Participating in cultural heritage digitization projects, assisting with research and data processing.</p>
+                        </div>
+                        <div class="exp-card">
+                            <div class="exp-date">2025.08 – 2025.10</div>
+                            <h3 data-i18n="exp.e3.company">GoodWe Power Technology</h3>
+                            <p class="exp-role" data-i18n="exp.e3.role">Campus Ambassador</p>
+                            <p class="exp-desc" data-i18n="exp.e3.desc">Executed campus promotion campaigns. Reached 2,000+ students through events and digital channels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-group">
+                    <h3 class="group-title" data-i18n="exp.group_campus">校园经历</h3>
+                    <div class="group-items">
+                        <div class="exp-card" data-images="portfolio/images/netease-hi-acho.png">
+                            <div class="exp-date">2025.06 – 2025.08</div>
+                            <h3 data-i18n="exp.e1.company">NetEase Hi Acho AI English App</h3>
+                            <p class="exp-role" data-i18n="exp.e1.role">Core Research Member</p>
+                            <p class="exp-desc" data-i18n="exp.e1.desc">Designed surveys and interviews. Collected 300+ questionnaires and 50+ in-depth interviews. Delivered data-backed product optimization report.</p>
+                        </div>
+                        <div class="exp-card">
+                            <div class="exp-date">2025.06 – Present</div>
+                            <h3 data-i18n="exp.e4.company">Hubei University Youth Media Association</h3>
+                            <p class="exp-role" data-i18n="exp.e4.role">Brand Department Lead</p>
+                            <p class="exp-desc" data-i18n="exp.e4.desc">Designed campus media outreach programs. Connected universities with brand partners, closed 2 collaborations. Covered 8+ universities with 50,000+ impressions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section-header">
+                <span class="section-number">柒</span>
+                <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">联系与投递</p>
+            </div>
+            <div class="contact-body">
+                <div class="contact-intent">
+                    <div class="intent-item">
+                        <span class="intent-label" data-i18n="contact.intent_label">意向方向</span>
+                        <span class="intent-value" data-i18n="contact.intent">产品运营 | 用户运营 | 内容策略 | 内容创作</span>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:2024311111143@whu.edu.cn" class="contact-item">
+                        <span class="contact-label" data-i18n="contact.email">Email</span>
+                        <span class="contact-value">2024311111143@whu.edu.cn</span>
+                    </a>
+                    <a href="tel:+8617762558695" class="contact-item">
+                        <span class="contact-label" data-i18n="contact.phone">Phone</span>
+                        <span class="contact-value">+86 177 6255 8695</span>
+                    </a>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="contact.wechat">WeChat</span>
+                        <span class="contact-value" data-i18n="contact.wechat_val">17762558695</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-seal">瑶</div>
+            <p>Hsienyao Yang · Angela · 杨仙瑶</p>
+            <p class="footer-year">乙巳年</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Lightbox -->
+    <div class="portfolio-overlay" id="portfolioOverlay">
+        <div class="portfolio-modal">
+            <button class="portfolio-close" aria-label="Close">&times;</button>
+            <div class="portfolio-stage">
+                <img src="" alt="Portfolio" id="portfolioImage">
+            </div>
+            <div class="portfolio-nav">
+                <button class="portfolio-arrow portfolio-prev" aria-label="Previous">‹</button>
+                <span class="portfolio-counter" id="portfolioCounter">1 / 1</span>
+                <button class="portfolio-arrow portfolio-next" aria-label="Next">›</button>
+            </div>
+            <div class="portfolio-thumbs" id="portfolioThumbs"></div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
