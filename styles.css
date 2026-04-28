@@ -1883,6 +1883,23 @@ body[data-lang="en"] .lang-alt { color: var(--color-ink-muted); font-weight: 400
     transform: translateY(-2px);
 }
 
+/* ===== Media Protection ===== */
+img,
+video,
+.ops-gallery img,
+.project-media video,
+.portrait-wrap img,
+.content-card img {
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: auto;
+}
+
+img::selection,
+video::selection {
+    background: transparent;
+}
+
 /* ===== Active Nav Link ===== */
 .nav-menu a.active {
     color: var(--color-cinnabar);

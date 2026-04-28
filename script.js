@@ -661,4 +661,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
         if (e.key === 'ArrowRight') showImage(currentIndex + 1);
     });
+
+    // ===== Media Download Protection =====
+    document.addEventListener('contextmenu', (e) => {
+        if (e.target.closest('img, video, .ops-gallery, .portrait-wrap')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('dragstart', (e) => {
+        if (e.target.closest('img, video')) {
+            e.preventDefault();
+        }
+    });
 });
