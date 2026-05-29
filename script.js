@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.events': 'Events',
             'nav.experience': 'Experience',
             'nav.research': 'Research',
+            'nav.internship': 'Internship',
             'nav.contact': 'Contact',
             'hero.greeting': 'Welcome',
             'hero.title': 'Literary Foundation · AI Driven · Full-Stack Practice',
@@ -112,6 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.honors.h2': 'University-level Three-Good Student, Social Practice Advanced Individual',
             'about.honors.h3': 'National College Student Digital Trade Competition National First Prize',
             'about.honors.h4': 'China Computer Design Competition Central-South Region First Prize',
+            'about.profile.title': '📍 Research Positioning',
+            'about.profile.p1': 'Interdisciplinary background bridging humanities and technology, deepening expertise in digital humanities. Leading a provincial innovation project, proficient in SAM 3 image segmentation and automated annotation, with research experience in visual decomposition, semantic slicing, and cross-modal semantic mapping.',
+            'about.profile.p2': 'Focusing on stance detection from a computational criticism perspective and personified Agent logic construction. Continuously exploring large model local deployment, supervised fine-tuning, and RAG architecture.',
             'about.strengths.title': '💡 Core Competencies',
             'about.capability.c1.title': 'Product Thinking',
             'about.capability.c1.summary': 'Complete ability from user research to product delivery.',
@@ -151,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'projects.p2.role': 'Independent Full-Stack Developer',
             'projects.p2.desc': 'Utilized large model technology for emotional annotation of classical literature, achieving digital interaction with cultural heritage.',
             'projects.p3.tag': 'Full-Stack',
-            'projects.p3.title': 'Product Design & Operations · Independent Education Tools',
+            'projects.p3.title': 'Product Design · Independent Education Tools',
             'projects.p3.role': 'Independent Developer · Children\'s Education / Su Shi Poetry Visualization',
             'projects.p3.goal': 'To address core pain points of fragmented learning records, invisible outcomes, and poor experience caused by traditional WeChat group check-ins, independently designed and developed two online education tools to improve student persistence and teacher guidance efficiency.',
             'projects.p3.d1': 'Pain-Point Driven Design: Addressed real-scenario problems like "storage pressure" for students, "hard-to-quantify results" for teachers, and "notifications buried" in WeChat groups. Clarified core product value: replace inefficient check-ins with structured learning records.',
@@ -263,7 +267,61 @@ document.addEventListener('DOMContentLoaded', () => {
             'contact.email': 'Email',
             'contact.phone': 'Phone',
             'contact.wechat': 'WeChat',
-            'contact.wechat_val': '17762558695'
+            'contact.wechat_val': '17762558695',
+            'portal.title': 'Explore',
+            'portal.subtitle': '了解更多',
+            'portal.research.title': 'Research',
+            'portal.research.desc': 'Cultural Digitization · AI Agent · Digital Humanities · Computational Lit.',
+            'portal.internship.title': 'Internship',
+            'portal.internship.desc': 'Product Operations · AI Products · Content Strategy · Event Planning',
+            'research.projects_title': 'Research Projects',
+            'research.projects_subtitle': '科研项目',
+            'research.exp_title': 'Research Experience',
+            'research.exp_subtitle': 'Research Experience',
+            'research.showcase_title': 'Project Showcase',
+            'research.showcase_subtitle': '项目展示',
+            'research.profile_title': 'Research Profile',
+            'research.profile_subtitle': '研究定位',
+            'research.p1.tag': 'Cultural Digitization',
+            'research.p1.title': 'Provincial Innovation Project · Project Lead',
+            'research.p1.subtitle': 'AI-Powered Cultural Gene Digitization: Extraction and Intelligent Annotation',
+            'research.p1.approach_label': 'Technical Paradigm',
+            'research.p1.approach': 'Built an interdisciplinary pipeline centered on visual decomposition, semantic slicing, and cross-modal semantic mapping to address the low granularity problem in artifact digitization.',
+            'research.p1.model_label': 'Model Application',
+            'research.p1.model_sam': 'Introduced Meta SAM 3 (Segment Anything Model) for fine-grained artifact image segmentation, upgrading analysis from pixel-level to semantic-level.',
+            'research.p1.model_corpus': 'Established a knowledge association model from image features to textual semantics, and authored an intelligent annotation guide for traditional artifact patterns.',
+            'research.p1.result_label': 'Milestone Results',
+            'research.p1.result': 'Passed mid-term defense. Achieved high-precision automated identification of traditional cultural genes through multi-modal fusion. Project supported by WHU Key Laboratory of Intelligent Computing for Cultural Heritage.',
+            'research.p2.tag': 'AI Agent',
+            'research.p2.title': 'Digital Reshaping of Historical Figures & Personified Agent Construction',
+            'research.p2.subtitle': 'ByteDance AI Creator Hackathon 2026 · Central China Direct Qualification',
+            'research.p2.db_label': 'Foundation Database Construction',
+            'research.p2.db': 'Built a structured database in Python by cleaning historical figures\' writings, correspondence, and related historical materials. Automated scripts extract distinctive linguistic styles, logical preferences, and historical decision-making rationales.',
+            'research.p2.align_label': 'LLM Cognition & Persona Alignment',
+            'research.p2.align': 'Deep practice of Prompt Engineering — constructing multi-level system instructions to recreate the "soul" of specific historical figures within LLMs. Focused on tuning response accuracy in specific historical contexts, exploring the boundary between model priors and historical authenticity.',
+            'research.p2.challenge_label': 'Technical Challenges & Direction',
+            'research.p2.challenge1': 'Cognitive Bias: Prompt-only intervention cannot fully overcome modern value biases in general models, requiring SFT or continued pre-training to inject era-specific knowledge.',
+            'research.p2.challenge2': 'Long-term Memory & Consistency: Exploring AI Agents architecture to master long/short-term memory management for logically self-consistent historical figure agents.',
+            'research.p3.tag': 'Digital Humanities',
+            'research.p3.title': '"Prosperous Suzhou" Dynamic Exhibition & Intelligent Revitalization',
+            'research.p3.subtitle': 'Personal Academic Project · Cultural Heritage Digital Revitalization',
+            'research.p3.design_label': 'Immersive Narrative Design',
+            'research.p3.design': 'Innovatively designed a triple-perspective interaction paradigm — viewing the same "Prosperous Suzhou" scroll through different social classes (merchants, literati, commoners) for multi-dimensional immersive interpretation and contextual reconstruction.',
+            'research.p3.engine_label': 'Engineering Implementation',
+            'research.p3.engine1': 'Adopted Vibe Coding development paradigm, using AI-assisted programming to build a horizontal scroll architecture.',
+            'research.p3.engine2': 'Transformed literary narrative logic into digital interaction semantics, customizing differentiated visual focal points and textual narration for each perspective.',
+            'research.p3.link': 'Visit Project →',
+            'research.p4.tag': 'Computational Lit.',
+            'research.p4.title': 'Computational Literary Analysis of Writers\' Creative Views in the Generative AI Era',
+            'research.p4.subtitle': 'Personal Academic Project · Computational Criticism',
+            'research.p4.status_label': 'Current Status',
+            'research.p4.status': 'Established collection standards for large-scale unstructured literary discourse corpora. Completed initial core sample collection and semantic framework design, aiming to deconstruct contemporary writers\' aesthetic stances toward technology through quantitative methods.',
+            'research.exp.hackathon.title': 'ByteDance AI Creator Hackathon 2026',
+            'research.exp.hackathon.role': 'Central China Direct Qualification',
+            'research.exp.hackathon.desc': 'Led the "Cyber Ancestor Cultivation" project from 0→1 at the WHU campus hackathon, earning direct qualification to the Central China regional finals.',
+            'research.profile.p1': 'Interdisciplinary background bridging humanities and technology, aspiring to deepen expertise in digital humanities. Leading a provincial innovation project, proficient in SAM 3 image segmentation and automated annotation, with research experience in visual decomposition, semantic slicing, and cross-modal semantic mapping.',
+            'research.profile.p2': 'Currently exploring Python-based processing of large-scale unstructured corpora, focusing on stance detection from a computational criticism perspective and personified Agent logic construction. Seeking to master large model local deployment, supervised fine-tuning, and RAG architecture.',
+            'nav.back_home': 'Back to Home'
         },
         zh: {
             'nav.about': '关于',
@@ -272,6 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.events': '活动策划',
             'nav.experience': '经历',
             'nav.research': '科研',
+            'nav.internship': '实习',
             'nav.contact': '联系',
             'hero.greeting': '欢迎',
             'hero.title': '文学底蕴 · AI 驱动 · 全栈实践',
@@ -292,6 +351,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.honors.h2': '校级三好学生、社会实践先进个人',
             'about.honors.h3': '全国大学生数字贸易大赛 全国一等奖',
             'about.honors.h4': '中国大学生计算机设计大赛 中南赛区一等奖',
+            'about.profile.title': '📍 研究定位',
+            'about.profile.p1': '跨学科交叉背景，深耕数字人文领域。主导省级大创项目，掌握 SAM 3 图像分割与自动化标注技术，拥有视觉解构、语义切片及跨模态语义映射的科研经历。',
+            'about.profile.p2': '专注于计算批评视角下的立场检测研究与人格化 Agent 逻辑构建，持续探索大模型本地化部署、监督微调及 RAG 架构等前沿技术。',
             'about.strengths.title': '💡 核心竞争力',
             'about.capability.c1.title': '产品思维',
             'about.capability.c1.summary': '具备从用户需求到产品落地的完整闭环能力。',
@@ -331,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'projects.p2.role': '独立全栈开发者',
             'projects.p2.desc': '利用大模型技术对经典文学进行情感标注，实现文化遗产的数字化交互。',
             'projects.p3.tag': '全栈开发',
-            'projects.p3.title': '产品设计与运营 | 独立全栈开发教育工具',
+            'projects.p3.title': '产品设计 | 独立全栈开发教育工具',
             'projects.p3.role': '独立开发者 · 儿童公益 / 二苏诗词可视化',
             'projects.p3.goal': '为解决传统微信群打卡导致的学习记录碎片化、成果不可视、体验差等核心痛点，独立设计并开发两款线上教学工具，旨在提升学员学习坚持度与教师指导效率。',
             'projects.p3.d1': '痛点驱动设计：针对学员"存储压力大"、教师"成果难量化"、微信群"通知被淹没"等真实场景问题，明确产品核心价值——替代低效打卡，提供结构化学习记录。',
@@ -443,17 +505,72 @@ document.addEventListener('DOMContentLoaded', () => {
             'contact.email': '电子邮箱',
             'contact.phone': '电话',
             'contact.wechat': '微信',
-            'contact.wechat_val': '17762558695'
+            'contact.wechat_val': '17762558695',
+            'portal.title': '了解更多',
+            'portal.subtitle': 'Explore',
+            'portal.research.title': '科研相关',
+            'portal.research.desc': '文化遗产数字化 · AI Agent · 数字人文 · 计算文学',
+            'portal.internship.title': '实习相关',
+            'portal.internship.desc': '产品运营 · AI 产品 · 内容策略 · 活动策划',
+            'research.projects_title': '科研项目',
+            'research.projects_subtitle': 'Research Projects',
+            'research.exp_title': '科研经历',
+            'research.exp_subtitle': 'Research Experience',
+            'research.showcase_title': '项目展示',
+            'research.showcase_subtitle': 'Project Showcase',
+            'research.profile_title': '研究定位',
+            'research.profile_subtitle': 'Research Profile',
+            'research.p1.tag': '文化遗产数字化',
+            'research.p1.title': '省级大学生创新创业训练计划 · 项目负责人',
+            'research.p1.subtitle': '基于文物图像的传统文化基因提取与智能标注研究',
+            'research.p1.approach_label': '技术范式',
+            'research.p1.approach': '构建了一套以视觉解构为基础、语义切片为支撑、跨模态语义映射为核心的跨学科实践路径，旨在解决文物数字化中细粒度较低的问题。',
+            'research.p1.model_label': '模型应用',
+            'research.p1.model_sam': '引入 Meta SAM 3 (Segment Anything Model) 实现文物图像的精细化分割，将图像由像素级提升至语义级解析。',
+            'research.p1.model_corpus': '建立从图像特征到文本语义的知识关联模型，主持编制了针对传统器物纹样的智能标注指南。',
+            'research.p1.result_label': '阶段成果',
+            'research.p1.result': '已完成中期答辩。通过多模态融合技术实现了对传统文化基因的高精度自动识别，项目成果获武汉大学文化遗产智能计算文科重点实验室支持。',
+            'research.p2.tag': 'AI 智能体',
+            'research.p2.title': '历史人物数字化重塑与人格化 Agent 构建',
+            'research.p2.subtitle': '抖音 AI 创变者计划 2026 · 华中区直通资格',
+            'research.p2.db_label': '底层数据库构建',
+            'research.p2.db': '基于 Python 开发环境，对特定历史人物的生平论著、书信及相关史料进行结构化清洗。通过编写自动化脚本，提取人物特有的语言风格、逻辑偏好与历史决策依据，构建初步的数据库。',
+            'research.p2.align_label': '大模型认知与人格对齐',
+            'research.p2.align': '深度实践 Prompt Engineering，通过构建多层级的系统指令，尝试在 LLM 中复现特定历史人物的灵魂。重点调试模型在特定历史情境下的反馈准确度，探索模型底层语料与历史真实性之间的边界。',
+            'research.p2.challenge_label': '技术挑战与方向',
+            'research.p2.challenge1': '底层认知偏差：仅通过提示词干预难以完全克服通用模型自带的现代价值观偏见，需要通过监督微调或继续预训练将特定时代的知识体系注入模型底层。',
+            'research.p2.challenge2': '长期记忆与自洽性：期望通过学习 AI Agents 架构，掌握长短期记忆管理技术，实现具备逻辑自洽能力的历史人物智能体。',
+            'research.p3.tag': '数字人文',
+            'research.p3.title': '《姑苏繁华图》动态展示与智能活化项目',
+            'research.p3.subtitle': '个人学术课题 · 文化遗产数字活化',
+            'research.p3.design_label': '沉浸式叙事设计',
+            'research.p3.design': '创新性地设计并实现了三重身份视角交互范式。通过不同社会阶层（商贾、文人、平民）的视角切入，对同一幅《姑苏繁华图》进行多维度的沉浸式解读，实现艺术名作的情景化重构。',
+            'research.p3.engine_label': '工程实现',
+            'research.p3.engine1': '采用 Vibe Coding 开发范式，利用 AI 辅助编程搭建了长卷横向滚动架构。',
+            'research.p3.engine2': '将文学叙事逻辑转化为数字交互语义，针对不同视角定制了差异化的视觉焦点与文本旁白，探索数字化文物在情景模拟与情感共鸣层面的新可能。',
+            'research.p3.link': '访问项目 →',
+            'research.p4.tag': '计算文学',
+            'research.p4.title': '生成式人工智能时代作家创作观的计算文学分析',
+            'research.p4.subtitle': '个人学术课题 · 计算批评',
+            'research.p4.status_label': '项目现状',
+            'research.p4.status': '确立了针对大规模非结构化文论语料的采集标准，目前已完成核心样本的初步搜集与语义框架设计，旨在通过定量手段解构当代作家对技术的审美立场。',
+            'research.exp.hackathon.title': '抖音 AI 创变者计划 2026',
+            'research.exp.hackathon.role': '华中区直通资格',
+            'research.exp.hackathon.desc': '在武汉大学校园站黑客松中主导"赛博老祖宗养成计划"项目从 0→1，成功获得华中区直通资格。',
+            'research.profile.p1': '具备跨学科交叉背景，未来希望深耕数字人文领域。主导省级大创项目，掌握 SAM 3 图像分割与自动化标注技术，拥有视觉解构、语义切片及跨模态语义映射的科研经历。',
+            'research.profile.p2': '目前在尝试利用 Python 处理大规模非结构化语料，专注于计算批评视角下的立场检测研究与人格化 Agent 逻辑构建。希望学习大模型本地化部署、监督微调及 RAG 架构等前沿技术，补齐科研过程中的证据溯源与逻辑自洽短板。',
+            'nav.back_home': '返回主页'
         }
     };
 
     // ===== Language Switch =====
-    let currentLang = 'en';
+    let currentLang = localStorage.getItem('lang') || 'en';
     const body = document.body;
     const langSwitch = document.getElementById('langSwitch');
 
     function setLanguage(lang) {
         currentLang = lang;
+        localStorage.setItem('lang', lang);
         body.setAttribute('data-lang', lang);
 
         document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -486,8 +603,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initialize
-    body.setAttribute('data-lang', 'en');
+    // Initialize language from localStorage
+    setLanguage(currentLang);
 
     // ===== Mobile Nav =====
     const navToggle = document.querySelector('.nav-toggle');
@@ -572,21 +689,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===== Active Nav Highlighting =====
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    const navSections = document.querySelectorAll('section[id], header.hero');
+    // For index.html, use IntersectionObserver for section-based highlighting
+    // For other pages, the active class is set in HTML
+    const isIndex = window.location.pathname.endsWith('index.html') ||
+                    window.location.pathname.endsWith('/') ||
+                    window.location.pathname.split('/').pop() === '';
 
-    const navObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.id;
-                navLinks.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-                });
-            }
-        });
-    }, { rootMargin: '-40% 0px -55% 0px' });
+    if (isIndex) {
+        const navSections = document.querySelectorAll('section[id], header.hero');
+        const navLinks = document.querySelectorAll('.nav-menu a');
 
-    navSections.forEach(section => navObserver.observe(section));
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach(link => {
+                        const href = link.getAttribute('href');
+                        link.classList.toggle('active', href === '#' + id);
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        navSections.forEach(section => navObserver.observe(section));
+    }
 
     // ===== Portfolio Lightbox (Card Click) =====
     const overlay = document.getElementById('portfolioOverlay');

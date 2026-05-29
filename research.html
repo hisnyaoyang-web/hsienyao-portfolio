@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hsienyao Yang · Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="ink-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-en">Angela</span>
+                <span class="logo-zh">仙瑶</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="research.html" class="active" data-i18n="nav.research">Research</a></li>
+                <li><a href="internship.html" data-i18n="nav.internship">Internship</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switch" id="langSwitch" aria-label="Switch Language">
+                    <span class="lang-current">EN</span>
+                    <span class="lang-sep">/</span>
+                    <span class="lang-alt">中文</span>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 壹 · 科研项目 -->
+        <section class="section" id="research" style="padding-top: 140px;">
+            <div class="section-header">
+                <span class="section-number">壹</span>
+                <h2 class="section-title" data-i18n="research.projects_title">Research Projects</h2>
+                <p class="section-subtitle" data-i18n="research.projects_subtitle">科研项目</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- 项目1: 省级大创 — 文化基因数字化（扩充） -->
+                <article class="ops-card">
+                    <div class="project-meta">
+                        <span class="project-tag" data-i18n="research.p1.tag">Cultural Digitization</span>
+                        <span class="project-date">2025.10 – Present</span>
+                    </div>
+                    <h3 data-i18n="research.p1.title">省级大学生创新创业训练计划 · 项目负责人</h3>
+                    <p class="ops-role" data-i18n="research.p1.subtitle">基于文物图像的传统文化基因提取与智能标注研究</p>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p1.approach_label">技术范式</h4>
+                        <p class="ops-text" data-i18n="research.p1.approach">构建了一套以视觉解构为基础、语义切片为支撑、跨模态语义映射为核心的跨学科实践路径，旨在解决文物数字化中细粒度较低的问题。</p>
+                    </div>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p1.model_label">模型应用</h4>
+                        <ul class="ops-list">
+                            <li data-i18n="research.p1.model_sam">引入 Meta SAM 3 (Segment Anything Model) 实现文物图像的精细化分割，将图像由像素级提升至语义级解析。</li>
+                            <li data-i18n="research.p1.model_corpus">建立从图像特征到文本语义的知识关联模型，主持编制了针对传统器物纹样的智能标注指南。</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p1.result_label">阶段成果</h4>
+                        <p class="ops-text" data-i18n="research.p1.result">已完成中期答辩。通过多模态融合技术实现了对传统文化基因的高精度自动识别，项目成果获武汉大学文化遗产智能计算文科重点实验室支持。</p>
+                    </div>
+                    <div class="project-tags" style="margin-top: 12px;">
+                        <span>Meta SAM 3</span>
+                        <span>Qwen 3-VL</span>
+                        <span>Gemini 1.5 Pro</span>
+                        <span>Cross-Modal Fusion</span>
+                    </div>
+                    <div class="ops-gallery" data-images="portfolio/images/keyan.png">
+                        <img src="portfolio/images/keyan.png" alt="Cultural Gene Digitization">
+                    </div>
+                </article>
+
+                <!-- 项目2: 历史人物Agent构建（新增） -->
+                <article class="ops-card">
+                    <div class="project-meta">
+                        <span class="project-tag" data-i18n="research.p2.tag">AI Agent</span>
+                        <span class="project-date">2026.04 – Present</span>
+                    </div>
+                    <h3 data-i18n="research.p2.title">历史人物数字化重塑与人格化 Agent 构建</h3>
+                    <p class="ops-role" data-i18n="research.p2.subtitle">抖音 AI 创变者计划 2026 · 华中区直通资格</p>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p2.db_label">底层数据库构建</h4>
+                        <p class="ops-text" data-i18n="research.p2.db">基于 Python 开发环境，对特定历史人物的生平论著、书信及相关史料进行结构化清洗。通过编写自动化脚本，提取人物特有的语言风格、逻辑偏好与历史决策依据，构建初步的数据库。</p>
+                    </div>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p2.align_label">大模型认知与人格对齐</h4>
+                        <p class="ops-text" data-i18n="research.p2.align">深度实践 Prompt Engineering，通过构建多层级的系统指令，尝试在 LLM 中复现特定历史人物的灵魂。重点调试模型在特定历史情境下的反馈准确度，探索模型底层语料与历史真实性之间的边界。</p>
+                    </div>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p2.challenge_label">技术挑战与方向</h4>
+                        <ul class="ops-list">
+                            <li data-i18n="research.p2.challenge1">底层认知偏差：仅通过提示词干预难以完全克服通用模型自带的现代价值观偏见，需要通过监督微调或继续预训练将特定时代的知识体系注入模型底层。</li>
+                            <li data-i18n="research.p2.challenge2">长期记忆与自洽性：通过学习 AI Agents 架构，掌握长短期记忆管理技术，实现具备逻辑自洽能力的历史人物智能体。</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags" style="margin-top: 12px;">
+                        <span>LLM Agent</span>
+                        <span>Prompt Engineering</span>
+                        <span>Python</span>
+                        <span>SFT / RAG</span>
+                    </div>
+                </article>
+
+                <!-- 项目3: 姑苏繁华图活化（新增） -->
+                <article class="ops-card">
+                    <div class="project-meta">
+                        <span class="project-tag" data-i18n="research.p3.tag">Digital Humanities</span>
+                        <span class="project-date">2026.03 – Present</span>
+                    </div>
+                    <h3 data-i18n="research.p3.title">《姑苏繁华图》动态展示与智能活化项目</h3>
+                    <p class="ops-role" data-i18n="research.p3.subtitle">个人学术课题 · 文化遗产数字活化</p>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p3.design_label">沉浸式叙事设计</h4>
+                        <p class="ops-text" data-i18n="research.p3.design">创新性地设计并实现了三重身份视角交互范式。通过不同社会阶层（商贾、文人、平民）的视角切入，对同一幅《姑苏繁华图》进行多维度的沉浸式解读，实现艺术名作的情景化重构。</p>
+                    </div>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p3.engine_label">工程实现</h4>
+                        <ul class="ops-list">
+                            <li data-i18n="research.p3.engine1">采用 Vibe Coding 开发范式，利用 AI 辅助编程搭建了长卷横向滚动架构。</li>
+                            <li data-i18n="research.p3.engine2">将文学叙事逻辑转化为数字交互语义，针对不同视角定制了差异化的视觉焦点与文本旁白，探索数字化文物在情景模拟与情感共鸣层面的新可能。</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags" style="margin-top: 12px;">
+                        <span>Vibe Coding</span>
+                        <span>Interactive Narrative</span>
+                        <span>Cultural Heritage</span>
+                    </div>
+                    <a href="https://gusufanhuatu.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                        <span data-i18n="research.p3.link">访问项目 →</span>
+                    </a>
+                </article>
+
+                <!-- 项目4: 计算文学分析（新增） -->
+                <article class="ops-card">
+                    <div class="project-meta">
+                        <span class="project-tag" data-i18n="research.p4.tag">Computational Lit.</span>
+                        <span class="project-date">2026.03 – Present</span>
+                    </div>
+                    <h3 data-i18n="research.p4.title">生成式人工智能时代作家创作观的计算文学分析</h3>
+                    <p class="ops-role" data-i18n="research.p4.subtitle">个人学术课题 · 计算批评</p>
+                    <div class="ops-section">
+                        <h4 class="ops-label" data-i18n="research.p4.status_label">项目现状</h4>
+                        <p class="ops-text" data-i18n="research.p4.status">确立了针对大规模非结构化文论语料的采集标准，目前已完成核心样本的初步搜集与语义框架设计，旨在通过定量手段解构当代作家对技术的审美立场。</p>
+                    </div>
+                    <div class="project-tags" style="margin-top: 12px;">
+                        <span>Computational Criticism</span>
+                        <span>NLP</span>
+                        <span>Stance Detection</span>
+                        <span>Corpus Linguistics</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 贰 · 科研项目展示 -->
+        <section class="section section-alt" id="showcase">
+            <div class="section-header">
+                <span class="section-number">贰</span>
+                <h2 class="section-title" data-i18n="research.showcase_title">Project Showcase</h2>
+                <p class="section-subtitle" data-i18n="research.showcase_subtitle">项目展示</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">文</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag" data-i18n="projects.p2.tag">NLP</span>
+                            <span class="project-date">2025.11 – 2026.01</span>
+                        </div>
+                        <h3 data-i18n="projects.p2.title">Sentiment Analysis for Su Shi & Su Zhe</h3>
+                        <p data-i18n="projects.p2.role">独立全栈开发者</p>
+                        <p data-i18n="projects.p2.desc">利用大模型技术对经典文学进行情感标注，实现文化遗产的数字化交互。</p>
+                        <div class="project-tags">
+                            <span>LLM API</span>
+                            <span>Data Annotation</span>
+                            <span>Web App</span>
+                        </div>
+                    </div>
+                    <div class="project-media">
+                        <video controls preload="metadata" poster="sushi-sentiment-poster.jpg">
+                            <source src="二苏诗词情感识别工具网站.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 叁 · 科研经历 -->
+        <section class="section" id="experience">
+            <div class="section-header">
+                <span class="section-number">叁</span>
+                <h2 class="section-title" data-i18n="research.exp_title">Research Experience</h2>
+                <p class="section-subtitle" data-i18n="research.exp_subtitle">科研经历</p>
+            </div>
+            <div class="experience-groups">
+                <div class="experience-group">
+                    <div class="group-items">
+                        <div class="exp-card">
+                            <div class="exp-date">2025.12 – Present</div>
+                            <h3 data-i18n="exp.e2.company">Wuhan University Intelligent Computing Laboratory for Cultural Heritage</h3>
+                            <p class="exp-role" data-i18n="exp.e2.role">Assistant</p>
+                            <p class="exp-desc" data-i18n="exp.e2.desc">Participating in cultural heritage digitization projects, assisting with research and data processing.</p>
+                        </div>
+                        <div class="exp-card">
+                            <div class="exp-date">2026.04</div>
+                            <h3 data-i18n="research.exp.hackathon.title">ByteDance AI Creator Hackathon 2026</h3>
+                            <p class="exp-role" data-i18n="research.exp.hackathon.role">Central China Direct Qualification</p>
+                            <p class="exp-desc" data-i18n="research.exp.hackathon.desc">Led the "Cyber Ancestor Cultivation" project from 0→1 at the WHU campus hackathon, earning direct qualification to the Central China regional finals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 个人定位 -->
+        <section class="section section-alt">
+            <div class="section-header">
+                <span class="section-number">肆</span>
+                <h2 class="section-title" data-i18n="research.profile_title">Research Profile</h2>
+                <p class="section-subtitle" data-i18n="research.profile_subtitle">研究定位</p>
+            </div>
+            <div class="contact-body">
+                <div class="profile-bio">
+                    <p data-i18n="research.profile.p1">具备跨学科交叉背景，未来希望深耕数字人文领域。主导省级大创项目，掌握 SAM 3 图像分割与自动化标注技术，拥有视觉解构、语义切片及跨模态语义映射的科研经历。</p>
+                    <p data-i18n="research.profile.p2">目前在尝试利用 Python 处理大规模非结构化语料，专注于计算批评视角下的立场检测研究与人格化 Agent 逻辑构建。希望学习大模型本地化部署、监督微调及 RAG 架构等前沿技术，补齐科研过程中的证据溯源与逻辑自洽短板。</p>
+                    <div class="project-tags" style="justify-content: center; margin-top: 20px;">
+                        <span>Python</span>
+                        <span>Meta SAM 3</span>
+                        <span>Prompt Engineering</span>
+                        <span>NLP</span>
+                        <span>AI Agent</span>
+                        <span>RAG</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Home -->
+        <section class="section back-home-section">
+            <a href="index.html" class="back-home-btn">
+                <span class="back-home-arrow">←</span>
+                <span data-i18n="nav.back_home">Back to Home</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-seal">瑶</div>
+            <p>Hsienyao Yang · Angela · 杨仙瑶</p>
+            <p class="footer-year">丙午年</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Lightbox -->
+    <div class="portfolio-overlay" id="portfolioOverlay">
+        <div class="portfolio-modal">
+            <button class="portfolio-close" aria-label="Close">&times;</button>
+            <div class="portfolio-stage">
+                <img src="" alt="Portfolio" id="portfolioImage">
+            </div>
+            <div class="portfolio-nav">
+                <button class="portfolio-arrow portfolio-prev" aria-label="Previous">‹</button>
+                <span class="portfolio-counter" id="portfolioCounter">1 / 1</span>
+                <button class="portfolio-arrow portfolio-next" aria-label="Next">›</button>
+            </div>
+            <div class="portfolio-thumbs" id="portfolioThumbs"></div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
